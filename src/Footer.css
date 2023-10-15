@@ -1,0 +1,10 @@
+.footer{
+    background-color: black;
+    color:white;
+}
+.footer_con{
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    padding:1% 0%;
+}

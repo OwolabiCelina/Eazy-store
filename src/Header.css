@@ -1,0 +1,146 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 50px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+  filter: drop-shadow(0px 0px 5px white);
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-top-left-radius:10px;
+  border-bottom-left-radius: 10px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #ffffff;
+  border-top-right-radius:10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;  
+  align-items:center;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+.hamburger{
+  color:white;
+  visibility: hidden;
+  opacity:0;
+}
+/* @media only screen and (max-width:585px){
+  .header {
+    width: 100%;
+  }
+  .header__logo {
+    margin: 0 5px;
+  }
+  .header__nav {
+    justify-content: space-between;  
+  }
+
+  .header__searchInput {
+    width: 80%;
+  }
+
+} */
+
+@media only screen and (max-width:500px) {
+  .header{
+    width: 100%;
+  }
+  .header__logo {
+    width: 50px;
+    filter:drop-shadow(0px 0px 5px white);
+    margin: 0px 0px;
+  }
+  .header__nav{
+    visibility: hidden;
+    padding:20px 0px;
+    margin-top: 220px;
+    text-align: center;
+    flex-direction: column;
+    transition:1s;
+    transform:translateY(-100vh);
+  }
+  .responsive_nav{
+    visibility: visible;
+    transform:none;
+  }
+  .header__option {
+    width:220px;
+    background-color: black;
+    border:1px solid white;
+    margin:5px 0px;
+    padding:8px 0px;
+    border-radius: 25px;
+  }
+  .header__search {
+   margin:3px auto 0px auto;
+   padding:8px 0px;
+  }
+  .header__optionBasket{
+    width:220px;
+    background-color: black;
+    border:1px solid white;
+    margin:5px 0px 0px 0px;
+    padding:8px 0px;
+    justify-content: center;
+    border-radius: 25px;
+  }
+  .hamburger{
+    visibility:visible;
+    opacity:1;
+    margin:0px 5px;
+  }
+}
